@@ -3,41 +3,41 @@ package com.ledemotions.ledep.Entidad;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Clientes")
+@Table(name = "Emociones")
 public class Emocion {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id_Emocion;
     @Column(length = 50)
-    private String e_Nombre;
+    private String eNombre;
     @Column
-    private int e_ColorRed;
+    private int eColorRed;
     @Column
-    private int e_ColorGreen;
+    private int eColorGreen;
     @Column
-    private int e_ColorBlue;
+    private int eColorBlue;
     @Column
-    private Boolean e_EstadoA;
+    private Boolean eEstadoA;
 
     public Emocion() {
     }
 
     public Emocion(int id_Emocion, String e_Nombre, int e_ColorRed, int e_ColorGreen, int e_ColorBlue, Boolean e_EstadoA) {
         this.id_Emocion = id_Emocion;
-        this.e_Nombre = e_Nombre;
-        this.e_ColorRed = e_ColorRed;
-        this.e_ColorGreen = e_ColorGreen;
-        this.e_ColorBlue = e_ColorBlue;
-        this.e_EstadoA = e_EstadoA;
+        this.eNombre = e_Nombre;
+        this.eColorRed = e_ColorRed;
+        this.eColorGreen = e_ColorGreen;
+        this.eColorBlue = e_ColorBlue;
+        this.eEstadoA = e_EstadoA;
     }
 
     public Emocion(String e_Nombre, int e_ColorRed, int e_ColorGreen, int e_ColorBlue, Boolean e_EstadoA) {
-        this.e_Nombre = e_Nombre;
-        this.e_ColorRed = e_ColorRed;
-        this.e_ColorGreen = e_ColorGreen;
-        this.e_ColorBlue = e_ColorBlue;
-        this.e_EstadoA = e_EstadoA;
+        this.eNombre = e_Nombre;
+        this.eColorRed = e_ColorRed;
+        this.eColorGreen = e_ColorGreen;
+        this.eColorBlue = e_ColorBlue;
+        this.eEstadoA = e_EstadoA;
     }
 
     public int getId_Emocion() {
@@ -49,54 +49,54 @@ public class Emocion {
     }
 
     public String getE_Nombre() {
-        return e_Nombre;
+        return eNombre;
     }
 
     public void setE_Nombre(String e_Nombre) {
-        this.e_Nombre = e_Nombre;
+        this.eNombre = e_Nombre;
     }
 
     public int getE_ColorRed() {
-        return e_ColorRed;
+        return eColorRed;
     }
 
     public void setE_ColorRed(int e_ColorRed) {
-        this.e_ColorRed = e_ColorRed;
+        this.eColorRed = e_ColorRed;
     }
 
     public int getE_ColorGreen() {
-        return e_ColorGreen;
+        return eColorGreen;
     }
 
     public void setE_ColorGreen(int e_ColorGreen) {
-        this.e_ColorGreen = e_ColorGreen;
+        this.eColorGreen = e_ColorGreen;
     }
 
     public int getE_ColorBlue() {
-        return e_ColorBlue;
+        return eColorBlue;
     }
 
     public void setE_ColorBlue(int e_ColorBlue) {
-        this.e_ColorBlue = e_ColorBlue;
+        this.eColorBlue = e_ColorBlue;
     }
 
     public Boolean getE_EstadoA() {
-        return e_EstadoA;
+        return eEstadoA;
     }
 
     public void setE_EstadoA(Boolean e_EstadoA) {
-        this.e_EstadoA = e_EstadoA;
+        this.eEstadoA = e_EstadoA;
     }
 
     @Override
     public String toString() {
         return "Emocion{" +
                 "id_Emocion=" + id_Emocion +
-                ", e_Nombre='" + e_Nombre + '\'' +
-                ", e_ColorRed=" + e_ColorRed +
-                ", e_ColorGreen=" + e_ColorGreen +
-                ", e_ColorBlue=" + e_ColorBlue +
-                ", e_EstadoA=" + e_EstadoA +
+                ", e_Nombre='" + eNombre + '\'' +
+                ", e_ColorRed=" + eColorRed +
+                ", e_ColorGreen=" + eColorGreen +
+                ", e_ColorBlue=" + eColorBlue +
+                ", e_EstadoA=" + eEstadoA +
                 '}';
     }
 }

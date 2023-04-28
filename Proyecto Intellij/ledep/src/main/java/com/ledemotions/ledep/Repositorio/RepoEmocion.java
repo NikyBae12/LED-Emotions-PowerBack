@@ -9,8 +9,8 @@ import java.util.ArrayList;
 @Repository
 public interface RepoEmocion extends JpaRepository<Emocion, Integer> {
 
-    ArrayList<Emocion> findBye_Nombre(String e_Nombre);
+    ArrayList<Emocion> findByeNombre(String eNombre);
 
-    ArrayList<Emocion> findBye_EstadoA(String e_EstadoA);
+    ArrayList<Emocion> findByeEstadoA(Boolean eEstadoA);
 
 }
