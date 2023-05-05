@@ -9,15 +9,15 @@ public class Emocion {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id_Emocion;
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String eNombre;
-    @Column
+    @Column(nullable = false)
     private int eColorRed;
-    @Column
+    @Column(nullable = false)
     private int eColorGreen;
-    @Column
+    @Column(nullable = false)
     private int eColorBlue;
-    @Column
+    @Column(nullable = false)
     private Boolean eEstadoA;
 
     public Emocion() {
